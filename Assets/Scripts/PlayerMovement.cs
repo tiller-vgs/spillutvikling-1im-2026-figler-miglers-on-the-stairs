@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         // 2. Apply the physics on the fixed physics step
         rb.linearVelocity = new Vector2(moveSpeed * xInput, rb.linearVelocity.y);
         isGrounded = CheckGrounded();
-        Debug.Log($"Is grounded? = {isGrounded}");
+        // Debug.Log($"Is grounded? = {isGrounded}");
         if (yJumping && isGrounded)
         {
             rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
@@ -50,4 +50,5 @@ public class PlayerMovement : MonoBehaviour
 
         return false;
     }
+
 }
