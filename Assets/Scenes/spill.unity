@@ -153,6 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   rb: {fileID: 0}
   moveSpeed: 5
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &932734223
 Rigidbody2D:
   serializedVersion: 5
@@ -179,7 +182,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &932734224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -311,7 +314,7 @@ GameObject:
   - component: {fileID: 1270382243}
   - component: {fileID: 1270382242}
   - component: {fileID: 1270382241}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
