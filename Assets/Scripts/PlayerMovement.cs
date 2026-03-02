@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         else if (xInput > 0 && xInput != 0)
             flipX = false;
         if(spriteRenderer != null)
-            spriteRenderer.flipX = flipX;
+            spriteRenderer.flipX = flipX; // Når vi drar til venstre så blir karakteren speilvendt
 
         isGrounded = CheckGrounded();
         //Debug.Log($"Is grounded? = {isGrounded}");
