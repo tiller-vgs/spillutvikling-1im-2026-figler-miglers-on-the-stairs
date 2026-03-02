@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class HealthhUIManagment : MonoBehaviour
+public class HealthUIManagment : MonoBehaviour
 {
 
     public List<Health> allHealth = new  List<Health>();
@@ -19,7 +19,8 @@ public class HealthhUIManagment : MonoBehaviour
                 break;
 
             }
-            
+            Debug.Log("Increase button pressed");
+
         }
 
 
@@ -40,8 +41,9 @@ public class HealthhUIManagment : MonoBehaviour
                 break;
 
             }
+            Debug.Log("Decrease button pressed");
 
-            
+
         }
 
         if (healthCounter <= 0   )
