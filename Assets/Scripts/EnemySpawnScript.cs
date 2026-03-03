@@ -26,5 +26,8 @@ public class EnemySpawnScript : MonoBehaviour
         Instantiate(enemyPrefab, rightSpawnPoint.position, Quaternion.identity);
         currentEnemyCount++;
 
+        Debug.Log("Spawning enemy number: " + currentEnemyCount);
+
+
     }
 }
