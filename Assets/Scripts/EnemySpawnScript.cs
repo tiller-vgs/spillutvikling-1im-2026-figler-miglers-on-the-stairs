@@ -14,6 +14,8 @@ public class EnemySpawnScript : MonoBehaviour
     void Start()
     {
         InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        Debug.Log("Spawner started on: " + gameObject.name);
+        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
     }
     void SpawnEnemy()
     {
@@ -25,6 +27,9 @@ public class EnemySpawnScript : MonoBehaviour
 
         Instantiate(enemyPrefab, rightSpawnPoint.position, Quaternion.identity);
         currentEnemyCount++;
+
+        Debug.Log("Spawning enemy number: " + currentEnemyCount);
+
 
     }
 }
