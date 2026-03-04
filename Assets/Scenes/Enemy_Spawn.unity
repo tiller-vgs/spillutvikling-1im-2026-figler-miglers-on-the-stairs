@@ -273,8 +273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   enemyPrefab: {fileID: 1857553532}
   rightSpawnPoint: {fileID: 995158625}
-  maxEnemies: 5
-  spawnInterval: 2
+  maxEnemies: 0
+  spawnInterval: 0
 --- !u!4 &1857553534
 Transform:
   m_ObjectHideFlags: 0

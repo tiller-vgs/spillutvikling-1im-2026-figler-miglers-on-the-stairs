@@ -5,7 +5,7 @@ public class StartMenyKontroller : MonoBehaviour
 {
     public void OnStartClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TEST_SCENEEEE");
     
     
     }
