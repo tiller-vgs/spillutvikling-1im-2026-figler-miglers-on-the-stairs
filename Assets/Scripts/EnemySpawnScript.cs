@@ -15,7 +15,7 @@ public class EnemySpawnScript : MonoBehaviour
     {
         InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
         Debug.Log("Spawner started on: " + gameObject.name);
-        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnInterval);
+        
     }
     void SpawnEnemy()
     {
