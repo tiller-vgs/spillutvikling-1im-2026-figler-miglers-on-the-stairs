@@ -8,25 +8,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Level1.unity
     guid: e3574223950a574459b1a196f011a942
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DeathScreen.unity
     guid: 37daf8345225643079c224755488b74c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TEST_SCENEEEE.unity
     guid: 995920e8235f9964d960cf19c5da6d9b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Heart_system.unity
     guid: 1f8872f2d2c187f48b38b4387e6e1625
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Timer_Scene.unity
     guid: 319bf36a89332d84d85a75a29da283e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/enemytest.unity
     guid: b57e5a8eec5030d4d80d0705113ffddb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Enemy_Spawn.unity
     guid: 94e2846b3ca1ab94db7a1415d3245fc2
   - enabled: 0

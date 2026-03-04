@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
     {
         isActive = true;
         foreGround.gameObject.SetActive(true);
+
     }
 
 
