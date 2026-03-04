@@ -22,7 +22,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (IsVisibleToPlayerCamera())
         {
-            float directionX = Mathf.Sign(player.position.x - transform.position.y);
+            float directionX = Mathf.Sign(player.position.x - transform.position.x);
             rb.linearVelocity = new Vector2(directionX * Speed, rb.linearVelocity.y);
         }
 
