@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 910447070}
   - component: {fileID: 910447069}
   - component: {fileID: 910447068}
+  - component: {fileID: 910447071}
   m_Layer: 0
   m_Name: mp40_0
   m_TagString: Untagged
@@ -578,6 +579,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1412790593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &910447071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910447066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ae34ad7eb5436bbb50941e507a70b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  bullet: {fileID: 58966057149910602, guid: 808ab92844d7234d9ac368eddd5d6c99, type: 3}
+  time: 1
 --- !u!1 &1226755757
 GameObject:
   m_ObjectHideFlags: 0
