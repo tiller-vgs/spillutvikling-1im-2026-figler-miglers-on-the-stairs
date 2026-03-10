@@ -10,8 +10,14 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
 
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+        }
+    }
     void FixedUpdate()
     {
         if (player == null)
