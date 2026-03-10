@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 372436749}
   - component: {fileID: 372436748}
   - component: {fileID: 372436747}
-  - component: {fileID: 372436752}
   - component: {fileID: 372436751}
   m_Layer: 5
   m_Name: Canvas
@@ -238,20 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8512b6a73e47bf4409ceaef0472f4a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenyKontroller
---- !u!114 &372436752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372436746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d057c66c743c4c43aac6af5a5ef6e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  timerText: {fileID: 0}
-  remainingTime: 90
 --- !u!1 &762371112
 GameObject:
   m_ObjectHideFlags: 0
