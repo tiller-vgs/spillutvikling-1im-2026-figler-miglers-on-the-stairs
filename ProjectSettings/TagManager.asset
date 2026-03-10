@@ -3,20 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - ground
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - ground
+  - 
   - Water
   - UI
-<<<<<<< HEAD
-  - background
-=======
-  - AirSlash
->>>>>>> 594fa78b72bd5d48fc26cedee94f8eeaaa6f9d16
+  - 
   - 
   - 
   - 
