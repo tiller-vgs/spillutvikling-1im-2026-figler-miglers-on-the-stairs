@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -21,7 +22,12 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("traffff");
+            HealthService playerHealth = other.GetComponent<HealthService>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.DecreaseHealth(1);
+            }            
             Destroy(gameObject);
         }
     }
