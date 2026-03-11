@@ -6,9 +6,9 @@ namespace Assets.Scripts
 	public class HealthService : MonoBehaviour
 	{
 		[SerializeField] int maxHealth = 100;
+		public event System.Action OnDeath;
 		int remainingHealth;
 
-		public event System.Action OnDeath;
 		public int CurrentHealth => remainingHealth;
 		public int MaxHealth => maxHealth;
 		public bool IsDead => remainingHealth <= 0;
