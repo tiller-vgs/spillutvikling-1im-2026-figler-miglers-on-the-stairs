@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed = 10f;
     public float jumpForce = 12f;
+    [SerializeField] private Animator _animator;
 
     private LayerMask groundLayerMask;
 
@@ -50,7 +51,16 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log($"Is grounded? = {isGrounded}");
         if (yJumping && isGrounded)
         {
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); 
+        }
+
+        if (xInput != 0)
+        {
+            _animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            _animator.SetBool("IsRunning", false);
         }
     }
 
