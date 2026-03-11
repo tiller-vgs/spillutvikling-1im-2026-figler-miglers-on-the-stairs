@@ -27,6 +27,7 @@ public class Bullet : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.DecreaseHealth(1);
+                Debug.Log($"Player helth: {playerHealth.CurrentHealth}");
             }            
             Destroy(gameObject);
         }
