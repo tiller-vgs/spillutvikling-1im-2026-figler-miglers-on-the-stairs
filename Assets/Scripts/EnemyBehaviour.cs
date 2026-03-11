@@ -10,8 +10,14 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
 
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+        }
+    }
     void FixedUpdate()
     {
         if (player == null)
@@ -22,7 +28,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (IsVisibleToPlayerCamera())
         {
-            float directionX = Mathf.Sign(player.position.x - transform.position.y);
+            float directionX = Mathf.Sign(player.position.x - transform.position.x);
             rb.linearVelocity = new Vector2(directionX * Speed, rb.linearVelocity.y);
         }
 
