@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 33889931}
   - component: {fileID: 33889932}
   - component: {fileID: 33889933}
+  - component: {fileID: 33889934}
   m_Layer: 0
   m_Name: Media_1_0
   m_TagString: Untagged
@@ -300,6 +301,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBehaviour
   Speed: 5
   player: {fileID: 464476023}
+--- !u!114 &33889934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33889927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
 --- !u!1 &152084627
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +531,7 @@ GameObject:
   - component: {fileID: 186301709}
   - component: {fileID: 186301708}
   - component: {fileID: 186301707}
+  - component: {fileID: 186301711}
   m_Layer: 0
   m_Name: gorilla_0 (3)
   m_TagString: Untagged
@@ -672,6 +687,19 @@ Transform:
   - {fileID: 644282299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!114 &186301711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186301706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
 --- !u!1 &299879020
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +941,7 @@ GameObject:
   - component: {fileID: 408575752}
   - component: {fileID: 408575751}
   - component: {fileID: 408575750}
+  - component: {fileID: 408575754}
   m_Layer: 0
   m_Name: gorilla_0 (1)
   m_TagString: Untagged
@@ -1068,6 +1097,19 @@ Transform:
   - {fileID: 152084628}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!114 &408575754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408575749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
 --- !u!1 &464476018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1123,8 @@ GameObject:
   - component: {fileID: 464476020}
   - component: {fileID: 464476019}
   - component: {fileID: 464476024}
+  - component: {fileID: 464476025}
+  - component: {fileID: 464476026}
   m_Layer: 0
   m_Name: faktiskprotagonist_0
   m_TagString: Player
@@ -1251,6 +1295,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.56, y: 6.32}
   m_EdgeRadius: 0
+--- !u!114 &464476025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464476018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
+--- !u!95 &464476026
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464476018}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41a969622cd313946a9e04479f5cfbf5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &644282298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1893,7 @@ GameObject:
   - component: {fileID: 971779917}
   - component: {fileID: 971779916}
   - component: {fileID: 971779915}
+  - component: {fileID: 971779919}
   m_Layer: 0
   m_Name: gorilla_0
   m_TagString: Untagged
@@ -1969,6 +2049,19 @@ Transform:
   - {fileID: 684641238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!114 &971779919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971779914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
 --- !u!1 &1082291839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2753,7 @@ GameObject:
   - component: {fileID: 1814925851}
   - component: {fileID: 1814925850}
   - component: {fileID: 1814925849}
+  - component: {fileID: 1814925853}
   m_Layer: 0
   m_Name: gorilla_0 (2)
   m_TagString: Untagged
@@ -2815,6 +2909,19 @@ Transform:
   - {fileID: 1190545469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!114 &1814925853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814925848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61bd239ba57ce843aefe565d358dcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.HealthService
+  maxHealth: 100
 --- !u!1 &1949407113
 GameObject:
   m_ObjectHideFlags: 0
