@@ -1125,6 +1125,7 @@ GameObject:
   - component: {fileID: 464476024}
   - component: {fileID: 464476025}
   - component: {fileID: 464476026}
+  - component: {fileID: 464476027}
   m_Layer: 0
   m_Name: faktiskprotagonist_0
   m_TagString: Player
@@ -1330,6 +1331,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &464476027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464476018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff78e2a2bdec3ee43ac2908236d1406b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AimingFireSlash
+  airSlashPrefab: {fileID: 5885735827146906047, guid: 5a307056a957d0bb49cb768a311789df, type: 3}
+  slashSpeed: 10
 --- !u!1 &644282298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1911,7 @@ GameObject:
   - component: {fileID: 971779919}
   m_Layer: 0
   m_Name: gorilla_0
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2696,7 +2711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 464476023}
-  fixedY: -0.25
+  fixedY: -0.3
 --- !u!114 &1725619889
 MonoBehaviour:
   m_ObjectHideFlags: 0
