@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4176492405592790490}
   - component: {fileID: 7234833717679547968}
   - component: {fileID: 6994463844702843035}
+  - component: {fileID: 1697534917055585391}
   m_Layer: 0
   m_Name: airslash
   m_TagString: Untagged
@@ -108,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019c30fc11cf83847aaed15a8cf8107d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AirSlash
-  speed: 10
+  speed: 30
   lifeTime: 1
 --- !u!61 &-79979526888857896
 BoxCollider2D:
@@ -209,3 +210,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b380ce6a6b052204c9174e43f69883f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AimFollowMouse
+--- !u!114 &1697534917055585391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885735827146906047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d88eff038285bc88df50090cc80eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rotate
+  rotationSpeed: 300
