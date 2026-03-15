@@ -10,5 +10,6 @@ public class Damage_Script : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")){
             health.TakeDamage(damageamount);
         }
+        Debug.Log("Damage");
     }
 }
