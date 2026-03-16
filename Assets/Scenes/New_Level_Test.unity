@@ -387,6 +387,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 5
   jumpForce: 12
+  _animator: {fileID: 0}
 --- !u!50 &663245893
 Rigidbody2D:
   serializedVersion: 5
