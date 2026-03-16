@@ -17,7 +17,21 @@ public class SpawnBullet : MonoBehaviour
 
     void SpawnNewBullet()
     {
-        Instantiate(bullet, transform.position, transform.rotation);
-        _audioSource.PlayOneShot(bulletSound);
+        if (IsVisibleToPlayerCamera())
+        {
+            Instantiate(bullet, transform.position, transform.rotation);
+            _audioSource.PlayOneShot(bulletSound);
+        }
+    }
+
+    bool IsVisibleToPlayerCamera()
+    {
+        Camera cam = Camera.main;
+
+        Vector3 viewportPoint = cam.WorldToViewportPoint(transform.position);
+
+        return viewportPoint.z > 0 &&
+               viewportPoint.x > 0 && viewportPoint.x < 1 &&
+               viewportPoint.y > 0 && viewportPoint.y < 1;
     }
 }
