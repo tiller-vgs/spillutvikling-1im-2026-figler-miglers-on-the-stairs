@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &58966057149910602
+--- !u!1 &5885735827146906047
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5794700599887510047}
-  - component: {fileID: 9203521704028450841}
-  - component: {fileID: 4328116575244653511}
-  - component: {fileID: -1285717864707230819}
+  - component: {fileID: 6721102477821925151}
+  - component: {fileID: 2702187114180010767}
+  - component: {fileID: -3573825851667701397}
+  - component: {fileID: -79979526888857896}
+  - component: {fileID: 4176492405592790490}
+  - component: {fileID: 7234833717679547968}
+  - component: {fileID: 6994463844702843035}
+  - component: {fileID: 1697534917055585391}
   m_Layer: 0
-  m_Name: bullet_0
+  m_Name: airslash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5794700599887510047
+--- !u!4 &6721102477821925151
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58966057149910602}
+  m_GameObject: {fileID: 5885735827146906047}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.6072664, y: 0.72870713, z: 0}
-  m_LocalScale: {x: -0.098985374, y: 0.06557552, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &9203521704028450841
+--- !u!212 &2702187114180010767
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58966057149910602}
+  m_GameObject: {fileID: 5885735827146906047}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,39 +85,39 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2346302928887187388, guid: 2a9535d861986ce3090ea883dac0f011, type: 3}
+  m_Sprite: {fileID: 9209357106800936050, guid: a891eeb8bbcab30ddb4f3de2355540bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.05, y: 0.87}
+  m_Size: {x: 1.03, y: 4.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4328116575244653511
+--- !u!114 &-3573825851667701397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58966057149910602}
+  m_GameObject: {fileID: 5885735827146906047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639cc21d7a53e9844b7b01d2557cf059, type: 3}
+  m_Script: {fileID: 11500000, guid: 019c30fc11cf83847aaed15a8cf8107d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 20
-  destroytime: 10
---- !u!61 &-1285717864707230819
+  m_EditorClassIdentifier: Assembly-CSharp::AirSlash
+  speed: 30
+  lifeTime: 1
+--- !u!61 &-79979526888857896
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58966057149910602}
+  m_GameObject: {fileID: 5885735827146906047}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -145,11 +149,77 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.05, y: 0.87}
-    newSize: {x: 2.05, y: 0.87}
+    oldSize: {x: 1.03, y: 4.34}
+    newSize: {x: 1.03, y: 4.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.05, y: 0.87}
+  m_Size: {x: 2.68, y: 8.01}
   m_EdgeRadius: 0
+--- !u!50 &4176492405592790490
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885735827146906047}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &7234833717679547968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885735827146906047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e10e6b576a1f249b18488928d1d900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DealDamage
+  damageAmount: 25
+  targetTag: enemy
+--- !u!114 &6994463844702843035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885735827146906047}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b380ce6a6b052204c9174e43f69883f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AimFollowMouse
+--- !u!114 &1697534917055585391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885735827146906047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d88eff038285bc88df50090cc80eff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rotate
+  rotationSpeed: 300

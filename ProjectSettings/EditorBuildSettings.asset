@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Heart_system.unity
+    guid: 1f8872f2d2c187f48b38b4387e6e1625
+  - enabled: 1
+    path: Assets/Scenes/Temporary_Healthtest.unity
+    guid: be77950053747584793adfc13f88f90e
+  - enabled: 1
     path: Assets/Scenes/New_Level_Test.unity
     guid: 14cca6517df34fb449cc6adb21411671
   - enabled: 1
@@ -18,18 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/enemytest.unity
     guid: b57e5a8eec5030d4d80d0705113ffddb
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Sample.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: e3574223950a574459b1a196f011a942
   - enabled: 0
     path: Assets/Scenes/TEST_SCENEEEE.unity
     guid: 995920e8235f9964d960cf19c5da6d9b
-  - enabled: 0
-    path: Assets/Scenes/Heart_system.unity
-    guid: 1f8872f2d2c187f48b38b4387e6e1625
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Timer_Scene.unity
     guid: 319bf36a89332d84d85a75a29da283e6
   - enabled: 0

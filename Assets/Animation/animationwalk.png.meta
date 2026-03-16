@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: f6d75534a49122546a82ecc4a5fe178c
+guid: a18b580a5b3c6b51e804804dc1a7f874
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3550282039023684115
-    second: Protagonistanimation_0
+      213: -4814665110477565519
+    second: animationwalk_0
   - first:
-      213: 8672170247546618110
-    second: Protagonistanimation_1
+      213: 8079401571539704972
+    second: animationwalk_1
   - first:
-      213: -2706393538392003695
-    second: Protagonistanimation_2
+      213: -3176090329492728688
+    second: animationwalk_2
+  - first:
+      213: -4501629489344089715
+    second: animationwalk_3
+  - first:
+      213: -7676024449935743648
+    second: animationwalk_4
+  - first:
+      213: -3946248980944492117
+    second: animationwalk_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 110
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,84 +111,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Protagonistanimation_0
+      name: animationwalk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 157
-        height: 633
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        y: 1
+        width: 193
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de53b83bb4ddabec0800000000000000
-      internalID: -3550282039023684115
+      spriteID: 1b19489579fde2db0800000000000000
+      internalID: -4814665110477565519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Protagonistanimation_1
+      name: animationwalk_1
       rect:
         serializedVersion: 2
-        x: 214
-        y: 3
-        width: 219
-        height: 630
-      alignment: 9
-      pivot: {x: 0.3333333, y: 0.4968254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef04abc94ecb95870800000000000000
-      internalID: 8672170247546618110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonistanimation_2
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 2
-        width: 223
+        x: 318
+        y: 5
+        width: 360
         height: 631
-      alignment: 9
-      pivot: {x: 0.33183858, y: 0.49445325}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19b6bb97a65f07ad0800000000000000
-      internalID: -2706393538392003695
+      spriteID: c8c5b5d3ceccf1070800000000000000
+      internalID: 8079401571539704972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationwalk_2
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 3
+        width: 227
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09458084ca24ce3d0800000000000000
+      internalID: -3176090329492728688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationwalk_3
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 3
+        width: 253
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81f83184dff681c0800000000000000
+      internalID: -4501629489344089715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationwalk_4
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 10
+        width: 353
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065ed5e9e68497590800000000000000
+      internalID: -7676024449935743648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animationwalk_5
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 0
+        width: 223
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba96e8fb57b1c39c0800000000000000
+      internalID: -3946248980944492117
       vertices: []
       indices: 
       edges: []
@@ -188,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8efffef2d735e01429de0bb53df26fc9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Protagonistanimation_0: -3550282039023684115
-      Protagonistanimation_1: 8672170247546618110
-      Protagonistanimation_2: -2706393538392003695
+      animationwalk_0: -4814665110477565519
+      animationwalk_1: 8079401571539704972
+      animationwalk_2: -3176090329492728688
+      animationwalk_3: -4501629489344089715
+      animationwalk_4: -7676024449935743648
+      animationwalk_5: -3946248980944492117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
