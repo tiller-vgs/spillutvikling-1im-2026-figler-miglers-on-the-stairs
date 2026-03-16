@@ -325,6 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Timer
   timerText: {fileID: 1087508763}
   remainingTime: 10
+  gameOverPanel: {fileID: 0}
 --- !u!114 &1087508763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,12 +856,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043752229}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 526.3487, y: 27.3535, z: 0}
-  m_LocalScale: {x: 1069.9357, y: 43.895634, z: 13.224834}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.853281, y: -2.644363, z: 0}
+  m_LocalScale: {x: 25.41808, y: 1.0536109, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2116858376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086678383
 GameObject:
@@ -1015,6 +1016,7 @@ GameObject:
   - component: {fileID: 2116858372}
   - component: {fileID: 2116858371}
   - component: {fileID: 2116858370}
+  - component: {fileID: 2116858377}
   m_Layer: 0
   m_Name: Protagonist_Sprite
   m_TagString: Player
@@ -1064,6 +1066,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 5
   jumpForce: 12
+  _animator: {fileID: 0}
 --- !u!50 &2116858373
 Rigidbody2D:
   serializedVersion: 5
@@ -1210,8 +1213,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1682414349}
+  - {fileID: 2043752232}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2116858377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116858369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d82af0652ded24d81df948dc697e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WhenPlayerDies_Script
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1221,4 +1237,3 @@ SceneRoots:
   - {fileID: 452289540}
   - {fileID: 2086678386}
   - {fileID: 2116858376}
-  - {fileID: 2043752232}
