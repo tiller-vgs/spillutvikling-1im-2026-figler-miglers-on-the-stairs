@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishPoint : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class FinishPoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("Level Completed!");
-            SceneController.instance.NextLevel();
+            SceneManager.LoadScene("WinScreen_game");
         }
     }
 }

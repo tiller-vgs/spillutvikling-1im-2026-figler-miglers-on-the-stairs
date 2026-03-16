@@ -5,7 +5,7 @@ public class Sceneloader_script : MonoBehaviour
 {
     void Start()
     {
-        SceneManager.LoadScene("Heart_system");
+        SceneManager.LoadScene("Timer_Scene2");
     }
   
 }
