@@ -241,7 +241,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &33889932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &186301709
 SpriteRenderer:
   serializedVersion: 2
@@ -1050,7 +1050,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &408575752
 SpriteRenderer:
   serializedVersion: 2
@@ -1287,6 +1287,7 @@ GameObject:
   - component: {fileID: 464476025}
   - component: {fileID: 464476026}
   - component: {fileID: 464476027}
+  - component: {fileID: 464476028}
   m_Layer: 0
   m_Name: faktiskprotagonist_0
   m_TagString: Player
@@ -1336,7 +1337,7 @@ MonoBehaviour:
   rb: {fileID: 464476019}
   moveSpeed: 10
   jumpForce: 13
-  _animator: {fileID: 0}
+  _animator: {fileID: 464476026}
 --- !u!212 &464476022
 SpriteRenderer:
   serializedVersion: 2
@@ -1506,6 +1507,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DieWhenDead
   sceneToLoad: DeathScreen
+--- !u!114 &464476028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464476018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc949ed35127c4795979dbe19967f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Quit_game
 --- !u!1 &644282298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,7 +2163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &971779917
 SpriteRenderer:
   serializedVersion: 2
@@ -2773,8 +2786,8 @@ Transform:
   m_GameObject: {fileID: 1701239900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.77118, y: 2.0404356, z: 0}
-  m_LocalScale: {x: 0.6263232, y: 5.0809007, z: 1}
+  m_LocalPosition: {x: -0.77118, y: 2.0404353, z: 0}
+  m_LocalScale: {x: 0.6263232, y: 5.0805736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 803296584}
@@ -3024,7 +3037,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1814925851
 SpriteRenderer:
   serializedVersion: 2
