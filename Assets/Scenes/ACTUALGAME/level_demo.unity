@@ -1336,7 +1336,7 @@ MonoBehaviour:
   rb: {fileID: 464476019}
   moveSpeed: 10
   jumpForce: 13
-  _animator: {fileID: 0}
+  _animator: {fileID: 464476026}
 --- !u!212 &464476022
 SpriteRenderer:
   serializedVersion: 2
@@ -2773,8 +2773,8 @@ Transform:
   m_GameObject: {fileID: 1701239900}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.77118, y: 2.0404356, z: 0}
-  m_LocalScale: {x: 0.6263232, y: 5.0809007, z: 1}
+  m_LocalPosition: {x: -0.77118, y: 2.0404353, z: 0}
+  m_LocalScale: {x: 0.6263232, y: 5.0805736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 803296584}
